@@ -1,0 +1,81 @@
+body{
+    font-family: "font-l",serif;
+    background: url(./.jpg) no-repeat fixed center/cover ;
+    height: 100vh;
+
+}
+
+
+
+
+h1{
+    text-transform:uppercase;
+    letter-spacing: 2px;
+    font-size: 2.5rem;
+    color: rgb(284, 284, 255);
+    margin-left: auto;
+    text-shadow: 5px 3px 0px #85dadab6;
+    text-align: center;
+    font-family: "playfair display",serif;
+}
+main{
+
+    background: rgb(228, 131, 131);
+    width: 90%;
+     min-height: 500px;
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px 5px rgba(0,0,0, 0 );
+}
+.Posotioning ,.flex {
+   border: 2px solid skyblue;
+   padding: 10px;
+   margin-top: 20px;
+   border-radius: 10px;
+
+}
+#aa{
+    height: 90px;
+    width: 70px;
+    background: rebeccapurple;
+    border-radius: 5px;
+    position: absolute;
+    right: 110px;
+
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 30% 78%;
+    padding: 20%;
+}
+form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-areas: "il i2" "ta ta" "bt bt";
+
+}
+input,textarea{
+    margin: 5px;
+    height: 45px;
+    border: 1px solid darkblue;
+    padding: 10px;
+    font-size: 1.1rem;
+    font-family: "font-l";
+}
+#firstname{
+    grid-area: i1;
+}
+#surname{
+    grid-area: i2;
+}
+textarea{
+    grid-area: ta;
+    resize: none;
+}
+input[type="submit"]{
+    grid-area: bt;
+    curser:pointe
+    
+}
